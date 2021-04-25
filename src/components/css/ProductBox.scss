@@ -1,0 +1,50 @@
+.app__products__items {
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 400px);
+  grid-template-rows: repeat(5, 400px);
+  grid-auto-flow: column;
+  column-gap: 6%;
+  row-gap: 2%;
+
+  &__item {
+    border: 1px solid grey;
+    width: 500px;
+    justify-self: center;
+    place-self: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 400px;
+    margin-left: 50px;
+    align-items: stretch;
+
+    &__img {
+      align-self: center;
+      margin-top: 20px;
+      height: 200px;
+    }
+    &__text {
+      display: flex;
+      margin-top: 50px;
+      margin-left: 10px;
+      align-items: flex-start;
+
+      &__title {
+        width: 80%;
+      }
+
+      &__price {
+        font-size: 30px;
+        position: relative;
+        bottom: 10px;
+      }
+
+      &:hover {
+        color: darkcyan;
+        cursor: pointer;
+      }
+    }
+  }
+}
